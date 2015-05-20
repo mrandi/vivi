@@ -1,3 +1,5 @@
+var fullstopUrl = 'http://localhost:8080';
+
 var applications = [{
   id: 'kio',
   name: 'Kio',
@@ -80,9 +82,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FullstopViolationsCtrl', function($scope, $http) {
-
   // Simple GET request example :
-  $http.get('http://localhost:8080/violations').
+  $http.get(fullstopUrl+'/violations').
   success(function(data, status, headers, config) {
     // this callback will be called asynchronously
     // when the response is available
@@ -105,7 +106,7 @@ angular.module('starter.controllers', [])
       }
     };
 
-    $http.post('http://localhost:8080/violations/' + $stateParams.violationId, {
+    $http.post(fullstopUrl + '/violations/' + $stateParams.violationId, {
       checked: user.checked,
       comment: user.comment
     }, config).
