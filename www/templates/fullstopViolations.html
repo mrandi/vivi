@@ -1,0 +1,17 @@
+<ion-view view-title="Violations">
+    <ion-content>
+        <ion-list>
+            <a class="item" ng-repeat="violation in violations" href="#/app/fullstopViolations/{{violation.id}}">
+
+                <h2>{{violation.accountId}} - {{ violation.region }}</h2>
+                <h3>{{ violation.message }}</h3>
+                <p>{{ violation.checked }}</p>
+                <p>{{ violation.comment }}</p>
+                <p>{{violation.violationObject}}</p>
+                <p>{{violation}}</p>
+            </a>
+        </ion-list>
+
+
+    </ion-content>
+</ion-view>

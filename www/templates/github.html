@@ -1,0 +1,17 @@
+<ion-view view-title="Github">
+    <ion-content>
+        <h1>Github</h1>
+        <ion-list>
+
+            <a class="item item-thumbnail-left" href="{{ githubResult.html_url }}" ng-repeat="githubResult in github"
+               href="#/app/githubResults/{{githubResult.id}}">
+                <img src="{{githubResult.owner.avatar_url}}">
+
+                <h2>{{githubResult.name}}</h2>
+
+                <p>{{githubResult.description}}</p>
+            </a>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

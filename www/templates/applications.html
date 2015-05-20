@@ -1,0 +1,17 @@
+<ion-view view-title="Applications">
+    <ion-content>
+    <div class="row">
+        <a href="#/app/addApplication" class="button icon-right ion-chevron-right button-calm">Add Application</a>
+        </div>
+        <ion-list>
+            <a class="item item-thumbnail-left" ng-repeat="application in applications"
+               href="#/app/applications/{{application.id}}">
+                <img src="img/ionic.png">
+
+                <h2>{{application.name}}</h2>
+
+                <p>{{application.description}}</p>
+            </a>
+        </ion-list>
+    </ion-content>
+</ion-view>
