@@ -1,4 +1,4 @@
-### Yourturn app
+### Vivi
 
 ionic based (http://ionicframework.com/\)
 
